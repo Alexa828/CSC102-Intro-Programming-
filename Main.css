@@ -1,0 +1,25 @@
+Body{
+    background-color: aqua;
+    color: purple;
+}
+
+Nav{ 
+    Padding : 5px;
+    line-height: 30px;
+}
+
+Footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
+Header{
+    text-align: center;
+}
+
+#meme image{
+    margin-right: 100px;
+    width: 100px;
+    height: 100px;
+}
