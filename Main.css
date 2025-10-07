@@ -18,8 +18,8 @@ Header{
     text-align: center;
 }
 
-#meme image{
-    margin-right: 100px;
-    width: 100px;
-    height: 100px;
+#memeimage{
+    margin-right: 250px;
+    width: 250px;
+    height: 250px;
 }
