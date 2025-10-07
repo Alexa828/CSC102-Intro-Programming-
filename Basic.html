@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1> Javascript Basics</h1>
+    </header>
+
+    <main> 
+        <h2> Variables</h2>
+        
+        <h2> Decision Logic - if/else</h2>
+
+        <h2> Functions</h2>
+
+        <h2>Loops</h2>
+    </main>
+    <!-- when you want to use JavaScript code, put it between script tags-->
+     <script> 
+        // single line comment 
+        /* multi-line comment */
+
+        // let's create our first Variable - a variable is a piece of information that the program stores
+        // camelCase
+        // var is less concerned with scope 
+        var firstName = "Alexa"; // this is a string variable 
+        
+        // snake_case
+        // let is very concerned with scopw
+        let first_name = "Alexa"; // this is a string variable
+
+        // Javascript is a dynamically-type language 
+        // Javascript tries to guess what the data type is your variable 
+        let age = 25; // Javascript will assumethis is an integer (int) - a whole number
+
+        let pi = 3.14; // Javascript will assume this is a float (decimal ponit)
+
+        let validInput = false; // Javascript will assume this is a boolean - true/false 
+
+        let last_name = ""; // We will set up the variable now, and get the value later
+
+        // This is a valid way to set up a variable in Javascript 
+        // In Javascript, please do not set up your variables without let or var
+        middle_name = "Thathsarani";
+
+        /* ***** if/else - decision logic ******/
+
+        // if statements test out the condition and are either true or false; if it's true the code inside the {} will 
+        // == is equality / are the values on the both sides the same/
+        // = is assignment - thew value on the left side of the = will become the value on the right side 
+        // === is where Javascript will compare both the value and the data type 
+        if (age == 25){
+            // if the age is 5 do something 
+            console.log("age is 5")
+        }
+        else if (age == 18){
+            "age is 18 - you are an adult"
+        }
+        else if(age == 25){
+            console.log("age is 25 - car renting is now cheaper");
+        }
+        // the else is a catch-all 
+        else{
+            console.log("age is not 5");
+        } 
+        
+        
+     </script>
+</body>
+</html>
