@@ -102,7 +102,7 @@ function rollDice(){
                 let message = "";
 
                 // concatenate (add) first name + " " + last name"
-                fullName = Firstname + " " + LastName;
+                fullName = FirstName + " " + LastName;
 
                 console.log("fullName=" + fullName);
 
