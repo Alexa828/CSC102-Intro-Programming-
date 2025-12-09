@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Example</title>
+
+      <link rel ="stylesheet" href="main.css"> 
+      <script src="Dice.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Input Example</h1>
+    </header>
+
+    <main>
+        <!-- creat a div to hold the validation message form the validation function -->
+        <div id="divmessage"></div>
+        <!-- form - post is the best option; use get for testing if needed; 
+         action is the name of the page that the form will post to -
+         we skip form posting in this class; set the name and id to the same value -->
+        <form methode="post" action="#" name="frmInput" id="frmInput" onsubmit="return false;">
+            <!-- use the label to explain what type of information you want the user to 
+             enter in the related text box-->
+            <labe for="txt_First_Name"> First Name:</labe>
+            <!-- specify type of text when setting up a textbox to reduce issues later-->
+            <input type="text" name="txt_First_Name" id="txt_First_Name" placeholder="ex, Jane">
+            <br>
+            <!-- gather the user's Last Name-->
+             <labe for="txt_Last_Name">Last Name:</labe>
+             <input type="text" name="txt_Last_Name" id="txt_Last_Name" placeholder="ex, Williams">
+            <br>
+             <!-- gather the user's zip code -->
+             <labe for="txt_Zip_Code">Zip Code:</labe>
+             <input type="text" name="txt_Zip_Code" id="txt_Zip_Code" placeholder="ex, 12345">
+            <br>
+             <button onclick="validateForm();">Save Inputs</button>
+        </form>
+
+
+    </main>
+</body>
+</html>

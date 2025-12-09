@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // when you create a class, you capitalize the first letter
+        // camelCase - firstName
+        // snake_case - first_name
+        // technically class names are PascalCase - where each first letter of the word is capitalized
+        class Student{
+            // think of the constructor as a function that is called when the object is created - it lets us quickly create the object
+            constructor(name, major, gpa, startYear, gradYear, email, birthDate){
+                // this.name is our class field/attribute/property
+                // name is the value passed in when the constructor is called to creat the object
+                this.name = name;
+                this.major = major;
+                this.gpa = gpa;
+                this.startYear = startYear;
+                this.gradYear = gradYear;
+                this.email = email;
+                this.birthDate = birthDate;
+         }
+
+         AttendClass(){
+            return "Class attended";
+         }
+
+        //  other methods are going to have a simalr design
+        }
+
+        //
+        let student1 = new Student("Bob Smith", "ACS", 4.0, 2025, 2028, "bob@bob.com", "11/18/10")
+
+    </script>
+</body>
+</html>

@@ -18,8 +18,18 @@ Header{
     text-align: center;
 }
 
+img{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 25%;
+    top: 25%;
+}
+.myImgClass{
+    width: 150px;
+
+}
+
 #memeimage{
-    margin-right: 250px;
-    width: 250px;
-    height: 250px;
+    width: 150px;
 }

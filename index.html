@@ -12,6 +12,10 @@
     <title>CSC102- index</title>
     <!-- add a link to our css file-->
      <link rel ="stylesheet" href="main.css"> 
+
+      <!-- link to the code in the external .js file -->
+        <script src="Dice.js"></script>
+           
     
 </head>
 <!-- annything we want our user to see should go in the body section-->
@@ -28,22 +32,29 @@
             <br>
             <a href="Borads.html">Boards</a>
          </nav>
-
     </header>
 
     <!-- this is a paragrah tag-->
-     <p> 
-        <img src ="1683890056704.jpeg"id ="memeimage">
-     </p>
 
-     <!-- The footer section is where we put legal info-->
+     <div>
+        <button id="btnStart" onclick="startMove();">Start Move</button>
+        <!-- the stop button should not be clickable when the page loads - disabled="true" ,means the button is not clickable -->
+        <button id="btnStop" onclick="stopMove();" disabled="true">Stop Move</button>
+     </div>
+     <p>
+        <img src ="1683890056704.jpeg" width="200" id ="memeimage" class="mtImgClass">
+     </p>
+     
+           
+
+     <!-- The footer section is where we put legal info, maybe sitemap-->
        <Footer>
-        Alexa Valencia Rodriguez
+        Alexa Ruby Valencia Rodriguez
         <br> University of advancing technology
         <br>
         2625 W. Baseline Rd.
         <br>
-        Tempe, Az 85283
+        Tempe, AZ 85283
        </Footer> 
 <!-- the closing body should be the 2nd line of code on each HTML page-->
 </body>

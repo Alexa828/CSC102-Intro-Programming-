@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Basics</title>
+</head>
+<body>
+    <header>
+         <h1>JavaScript Basics</h1>
+    </header>
+    
+    <main>
+        <h2>Variables</h2>
+
+        <h2> Decisicon Logic - if/else</h2>
+
+        <h2> Functions</h2>
+
+        <h2> Loops</h2>
+    </main>
+    <!-- when you want to use JavaScript code, put it between script tags -->
+    <script>
+        // single line comment
+        /* multi line commment */ 
+
+        // let's create our first veriale - a variable is a piece of information that the program stores
+        // camelCase
+        //  var is less concerned with scope
+        var firstName = "Alexa";  //this is a string varibale
+
+        // snake_case
+        //  let is ver concerned with scope
+        let first_name = "Alexa"; // this is a string variable 
+
+        // JavaScript is a dynamically-type language
+        // JavaScript tries to guess what is the data type of variables 
+        let age = 25; // JavaScript will assume this is an integer (int) - a whole number 
+
+        let pi= 3.14; // JavaScript will assume this is a float (decimal poionts)
+
+        let validInput = false; // JavaScript will assume that this is a boolean - true/false
+
+        let Last_name; "" // we will set up the varibale now, and get the value later 
+
+        // this is a valid way to set up a varibale in JavaScript 
+        // in JavaScript please do not set up your varibales without let or var
+        middle_name = "Ruby"; 
+
+        /* ****** if/ else - decision logic *******/ 
+
+        // if statement test out the condition and are either true or false; if it's tru the code inside the {} will run  
+        // == is equality / are the value on the both sides the same 
+        // = is assignment - the value on the left side of the = will become the value on the right side 
+        // === is where JavaScript will compare both the value and the data type
+        if (age == 5){
+            // if the age is 5 do something
+            console.log("age is 5");
+        }
+        else if(age == 18){
+            console.log("age is 18 - you are an adult");
+        }
+        else if(age == 25){
+            console.log("age is 25 -  car renting is now cheaper");
+        }
+        // the else is a catch-all 
+        else{
+            console.log("age is 5");
+
+        }
+
+        function addNumbers(num1, num2){
+                return num1 +num2;
+        }
+        
+        for(let i=0; i <18; i++){
+            console.log("i=" + i.toString());
+        }
+
+        // Loops - let us run a chunk of code over and over again
+        // nice for workwith data, displaying information
+        // for loops - a loop that runs a set number of times
+        // while loops - a loop that runs an undeterminned number of times
+
+        //  for loop
+        // the first secation of the for loop is a counter variable - i is most commonly used as the name of this variable 
+        // the second section of the loop is the condition that has to be true for the loop to run
+        // the third section of the loop is where we change the value of our counter variable (i)
+        // most of the time we add 1 to the counter using counter++ which is equivalent to i = i + 1
+        for (let i = 0; i < 5; i++){
+            // write the code here that you want to have run 5 times
+            console.log("i=" + i);
+        }
+
+        // while loop
+        // generally speaking, it is unclear how many times the while loop will run
+        // work great with user input
+
+        // set up variable that we want the while loop to test
+        let exit = "no";
+
+        // test for a condition that once it is no longer true, stop running the loop
+        // while loops may run a times if the condtion is not true
+        // while loops generally do not run the same number of times each iteration
+        // while loops can run an infinite number of times(this is BAD)
+        while(exit != "yes"){
+            console.log("test my infinite loop");
+
+            // change the condition that we are testing to get out of the loop
+            exit = "yes";
+        }
+
+        // do while loop
+        // the loop runs at least 1 time
+        do{
+            // do something here
+            console.log("do while loop");
+        }while(exit != "yes"); // make sure you always place a ; here
+
+        // array syntax
+        let arrFood = ["Pizza", "Tacos", "Burgers", "Hot dogs"];
+
+        cosole.log(arrFood);    
+
+            for (let i = 0; i < arrFood.lenght; i++){
+                // print
+                console.log(arrFood[i]);
+            }
+        
+
+
+    </script>
+</body>
+</html>
