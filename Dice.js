@@ -95,7 +95,7 @@ function rollDice(){
                 console.log("LastName=" + LastName);
                 console.log("ZipCode=" + ZipCode);
 
-                // validation - we need to make sure that the first name + " " + lsst name is less than 20 characters
+                // validation - we need to make sure that the first name + " " + last name is less than 20 characters
                 // zip code needs to be exactly 5 digits
 
                 // variable to hold store the message that we will display to the user
