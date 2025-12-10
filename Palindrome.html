@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome Tester</title>
+      <link rel= "stylesheet" href= "main.css">
+</head>
+<body>
+    <header>
+        <h1>Palindrome Tester</h1>
+    </header>
+    <main>
+        <!-- make it so the from will not submit - since this is a client - side test -->
+        <form onsubmit="return false;">
+            <label for="txtInput">Word to test: </label>
+            <input type="txtInput" id="txtInput" required>
+
+            <button onclick="testPalin();">Test word</button>
+        </form>
+
+        <div id="divResult"></div>
+    </main>
+    <script src="Dice.js">
+       
+    </script>
+</body>
+</html>
