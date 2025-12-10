@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Table</title>
+
+    <link rel= "stylesheet" href= "main.css">
+
+    <style>
+      
+    </style>
 </head>
 <body>
     <main>
@@ -51,10 +57,16 @@
                 // put the data in the td
                 td.textContent = arrProblems[i][j];
 
-                
+                    // append the new data to the existing row
+                    tr.appendChild(td);
                 }
+
+                // add the new row to the existing table
+                document.getElementById("tblData").appendChild(tr);
             }
         }
+
+        loadData();
     </script>
 </body>
 </html>
