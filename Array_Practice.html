@@ -32,7 +32,7 @@
             let newPlant = document.getElementById("txtNewPlant").value;
 
             // add the new plant to the array
-            arrPlants.push(NewPlants);
+            arrPlants.push(newPlant);
 
             // call the show plants function so we can 
             showPlants();
@@ -57,9 +57,9 @@
                 // add an event handeler so that when the list item (plant name) is clicked, we delete the plant
                 li.onclick = function(){
                     // check with the user to make sure that they really meant to delete the plant
-                    if (confirm('Remove' + plant + '?')){
+                    if(confirm('Remove ' + plant + '?')){
                         // they really want to delete the plant, so delete the plant
-                        arrPlants.spice(index, 1);
+                        arrPlants.splice(index, 1);
                         // should refresh the list with the plant removed
                         showPlants();
                     }
