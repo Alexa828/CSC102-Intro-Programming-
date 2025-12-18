@@ -8,6 +8,17 @@ Nav{
     line-height: 30px;
 }
 
+nav a{
+    text-decoration: none;
+    background-color:rgb(55, 201, 140);
+    color: black;
+    padding: 10px 20px;
+    /* make those corners rounded ; for square corners */
+    border-radius: 10px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
 Footer{
     position: fixed;
     bottom: 0;
